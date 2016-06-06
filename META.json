@@ -1,5 +1,5 @@
 {
-   "abstract" : "It's new $module",
+   "abstract" : "Teng Store for MojoX::Session",
    "author" : [
       "clicktx <clicktx@gmail.com>"
    ],
@@ -42,6 +42,7 @@
       },
       "runtime" : {
          "requires" : {
+            "MojoX::Session" : "0",
             "perl" : "5.008001"
          }
       },
@@ -52,6 +53,17 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/clicktx/p5-MojoX-Session-Store-Teng/issues"
+      },
+      "homepage" : "https://github.com/clicktx/p5-MojoX-Session-Store-Teng",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/clicktx/p5-MojoX-Session-Store-Teng.git",
+         "web" : "https://github.com/clicktx/p5-MojoX-Session-Store-Teng"
+      }
+   },
    "version" : "0.01",
    "x_serialization_backend" : "JSON::PP version 2.27300"
 }
