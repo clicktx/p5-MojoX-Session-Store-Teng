@@ -26,9 +26,15 @@ MojoX::Session::Store::Teng - Teng Store for MojoX::Session
 # DESCRIPTION
 
 [MojoX::Session::Store::Teng](https://metacpan.org/pod/MojoX::Session::Store::Teng) is a store for [MojoX::Session](https://metacpan.org/pod/MojoX::Session) that stores a
-session in a database using Teng.
+session in a database using [Teng](https://metacpan.org/pod/Teng).
 
-forked by [MojoX::Session::Store::Dbic](https://metacpan.org/pod/MojoX::Session::Store::Dbic)
+This module is forked by [MojoX::Session::Store::Dbic](https://metacpan.org/pod/MojoX::Session::Store::Dbic)
+
+!!! Dependencies [Teng::Plugin::ResultSet](https://metacpan.org/pod/Teng::Plugin::ResultSet) !!!
+
+    package MyDB;
+    use parent 'Teng';
+    __PACKAGE__->load_plugin('ResultSet');
 
 # ATTRIBUTES
 
@@ -78,7 +84,7 @@ Delete session from database.
 
 [Teng](https://metacpan.org/pod/Teng)
 
-[Teng::ResultSet](https://metacpan.org/pod/Teng::ResultSet)
+[Teng::Plugin::ResultSet](https://metacpan.org/pod/Teng::Plugin::ResultSet)
 
 [Mojolicious::Plugin::Session](https://metacpan.org/pod/Mojolicious::Plugin::Session)
 

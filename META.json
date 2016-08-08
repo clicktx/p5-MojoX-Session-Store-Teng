@@ -4,7 +4,7 @@
       "clicktx <clicktx@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v3.0.1, CPAN::Meta::Converter version 2.150005",
+   "generated_by" : "Minilla/v3.0.2, CPAN::Meta::Converter version 2.150005",
    "license" : [
       "perl_5"
    ],
@@ -43,6 +43,9 @@
       "runtime" : {
          "requires" : {
             "MojoX::Session" : "0",
+            "Mojolicious" : "0",
+            "Teng" : "0.28",
+            "Teng::Plugin::ResultSet" : "0",
             "perl" : "5.008001"
          }
       },
