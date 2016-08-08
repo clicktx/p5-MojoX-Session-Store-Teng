@@ -109,9 +109,17 @@ MojoX::Session::Store::Teng - Teng Store for MojoX::Session
 =head1 DESCRIPTION
 
 L<MojoX::Session::Store::Teng> is a store for L<MojoX::Session> that stores a
-session in a database using Teng.
+session in a database using L<Teng>.
 
-forked by L<MojoX::Session::Store::Dbic>
+This module is forked by L<MojoX::Session::Store::Dbic>
+
+
+!!! Dependencies L<Teng::Plugin::ResultSet> !!!
+
+    package MyDB;
+    use parent 'Teng';
+    __PACKAGE__->load_plugin('ResultSet');
+
 
 =head1 ATTRIBUTES
 
@@ -161,7 +169,7 @@ Delete session from database.
 
 L<Teng>
 
-L<Teng::ResultSet>
+L<Teng::Plugin::ResultSet>
 
 L<Mojolicious::Plugin::Session>
 
